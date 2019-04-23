@@ -10,7 +10,11 @@
     "grunt": "~1.0.0"
   },
   "phet": {
+    "colorProfile": true,
     "requirejsNamespace": "BUOYANCY",
+    "phetLibs": [
+      "density-buoyancy-common"
+    ],
     "runnable": true,
     "supportedBrands": [
       "phet",

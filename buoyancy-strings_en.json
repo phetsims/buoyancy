@@ -1,5 +1,17 @@
 {
   "buoyancy.title": {
     "value": "Buoyancy"
+  },
+  "screen.intro": {
+    "value": "Intro"
+  },
+  "screen.playground": {
+    "value": "Playground"
+  },
+  "screen.shapes": {
+    "value": "Shapes"
+  },
+  "screen.submarine": {
+    "value": "Submarine"
   }
 }

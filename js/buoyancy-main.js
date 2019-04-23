@@ -9,9 +9,12 @@ define( require => {
   'use strict';
 
   // modules
+  const IntroScreen = require( 'BUOYANCY/view/IntroScreen' );
+  const PlaygroundScreen = require( 'BUOYANCY/view/PlaygroundScreen' );
+  const ShapesScreen = require( 'BUOYANCY/view/ShapesScreen' );
   const Sim = require( 'JOIST/Sim' );
   const SimLauncher = require( 'JOIST/SimLauncher' );
-  const BuoyancyScreen = require( 'BUOYANCY/buoyancy/BuoyancyScreen' );
+  const SubmarineScreen = require( 'BUOYANCY/view/SubmarineScreen' );
   const Tandem = require( 'TANDEM/Tandem' );
 
   // strings
@@ -34,7 +37,10 @@ define( require => {
   // until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
   SimLauncher.launch( () => {
     const sim = new Sim( buoyancyTitleString, [
-      new BuoyancyScreen( Tandem.rootTandem.createTandem( 'buoyancyScreen' ) )
+      new IntroScreen( Tandem.rootTandem.createTandem( 'introScreen' ) ),
+      new PlaygroundScreen( Tandem.rootTandem.createTandem( 'playgroundScreen' ) ),
+      new ShapesScreen( Tandem.rootTandem.createTandem( 'shapesScreen' ) ),
+      new SubmarineScreen( Tandem.rootTandem.createTandem( 'submarineScreen' ) )
     ], simOptions );
     sim.start();
   } );
