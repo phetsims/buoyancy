@@ -15,6 +15,10 @@
     "phetLibs": [
       "density-buoyancy-common"
     ],
+    "preload": [
+      "../sherpa/lib/poly-decomp-0.3.0.js",
+      "../sherpa/lib/matter-0.14.2.js"
+    ],
     "runnable": true,
     "supportedBrands": [
       "phet",
@@ -23,6 +27,9 @@
     "simulation": true
   },
   "eslintConfig": {
-    "extends": "../chipper/eslint/sim_es6_eslintrc.js"
+    "extends": "../chipper/eslint/sim_eslintrc.js",
+    "globals": {
+      "Matter": false
+    }
   }
 }
