@@ -33,6 +33,7 @@ require.config( {
     DOT: '../../dot/js',
     JOIST: '../../joist/js',
     KITE: '../../kite/js',
+    MOBIUS: '../../mobius/js',
     PHETCOMMON: '../../phetcommon/js',
     PHET_CORE: '../../phet-core/js',
     PHET_IO: '../../phet-io/js',
