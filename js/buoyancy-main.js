@@ -9,12 +9,12 @@ define( require => {
   'use strict';
 
   // modules
+  const ApplicationsScreen = require( 'BUOYANCY/view/ApplicationsScreen' );
+  const ExploreScreen = require( 'BUOYANCY/view/ExploreScreen' );
   const IntroScreen = require( 'BUOYANCY/view/IntroScreen' );
-  const PlaygroundScreen = require( 'BUOYANCY/view/PlaygroundScreen' );
   const ShapesScreen = require( 'BUOYANCY/view/ShapesScreen' );
   const Sim = require( 'JOIST/Sim' );
   const SimLauncher = require( 'JOIST/SimLauncher' );
-  const SubmarineScreen = require( 'BUOYANCY/view/SubmarineScreen' );
   const Tandem = require( 'TANDEM/Tandem' );
 
   // strings
@@ -39,9 +39,9 @@ define( require => {
   SimLauncher.launch( () => {
     const sim = new Sim( buoyancyTitleString, [
       new IntroScreen( Tandem.rootTandem.createTandem( 'introScreen' ) ),
-      new PlaygroundScreen( Tandem.rootTandem.createTandem( 'playgroundScreen' ) ),
+      new ExploreScreen( Tandem.rootTandem.createTandem( 'playgroundScreen' ) ),
       new ShapesScreen( Tandem.rootTandem.createTandem( 'shapesScreen' ) ),
-      new SubmarineScreen( Tandem.rootTandem.createTandem( 'submarineScreen' ) )
+      new ApplicationsScreen( Tandem.rootTandem.createTandem( 'submarineScreen' ) )
     ], simOptions );
     sim.start();
   } );

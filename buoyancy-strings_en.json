@@ -5,13 +5,13 @@
   "screen.intro": {
     "value": "Intro"
   },
-  "screen.playground": {
-    "value": "Playground"
+  "screen.explore": {
+    "value": "Explore"
   },
   "screen.shapes": {
     "value": "Shapes"
   },
-  "screen.submarine": {
-    "value": "Submarine"
+  "screen.applications": {
+    "value": "Applications"
   }
 }

@@ -1,7 +1,7 @@
 // Copyright 2019, University of Colorado Boulder
 
 /**
- * Intro screen for Buoyancy
+ * Explore screen for Buoyancy
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
@@ -10,24 +10,24 @@ define( require => {
 
   // modules
   const buoyancy = require( 'BUOYANCY/buoyancy' );
-  const Demo2DScreenView = require( 'DENSITY_BUOYANCY_COMMON/common/view/Demo2DScreenView' );
+  const BuoyancyExploreModel = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/model/BuoyancyExploreModel' );
+  const BuoyancyExploreScreenView = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/view/BuoyancyExploreScreenView' );
   const DensityBuoyancyCommonColorProfile = require( 'DENSITY_BUOYANCY_COMMON/common/view/DensityBuoyancyCommonColorProfile' );
-  const DensityBuoyancyModel = require( 'DENSITY_BUOYANCY_COMMON/common/model/DensityBuoyancyModel' );
   const Screen = require( 'JOIST/Screen' );
 
   // strings
-  const screenPlaygroundString = require( 'string!BUOYANCY/screen.playground' );
+  const screenExploreString = require( 'string!BUOYANCY/screen.explore' );
 
-  class PlaygroundScreen extends Screen {
+  class ExploreScreen extends Screen {
     /**
      * @param {Tandem} tandem
      */
     constructor( tandem ) {
       super(
-        () => new DensityBuoyancyModel( tandem.createTandem( 'model' ) ),
-        model => new Demo2DScreenView( model, tandem.createTandem( 'view' ) ),
+        () => new BuoyancyExploreModel( tandem.createTandem( 'model' ) ),
+        model => new BuoyancyExploreScreenView( model, tandem.createTandem( 'view' ) ),
         {
-          name: screenPlaygroundString,
+          name: screenExploreString,
           backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
           tandem: tandem
         }
@@ -35,5 +35,5 @@ define( require => {
     }
   }
 
-  return buoyancy.register( 'PlaygroundScreen', PlaygroundScreen );
+  return buoyancy.register( 'ExploreScreen', ExploreScreen );
 } );

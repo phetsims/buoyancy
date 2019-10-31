@@ -16,9 +16,9 @@ define( require => {
   const Screen = require( 'JOIST/Screen' );
 
   // strings
-  const screenSubmarineString = require( 'string!BUOYANCY/screen.submarine' );
+  const screenApplicationsString = require( 'string!BUOYANCY/screen.applications' );
 
-  class SubmarineScreen extends Screen {
+  class ApplicationsScreen extends Screen {
     /**
      * @param {Tandem} tandem
      */
@@ -27,7 +27,7 @@ define( require => {
         () => new DensityBuoyancyModel( tandem.createTandem( 'model' ) ),
         model => new Demo2DScreenView( model, tandem.createTandem( 'view' ) ),
         {
-          name: screenSubmarineString,
+          name: screenApplicationsString,
           backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
           tandem: tandem
         }
@@ -35,5 +35,5 @@ define( require => {
     }
   }
 
-  return buoyancy.register( 'SubmarineScreen', SubmarineScreen );
+  return buoyancy.register( 'ApplicationsScreen', ApplicationsScreen );
 } );
