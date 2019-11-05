@@ -10,9 +10,9 @@ define( require => {
 
   // modules
   const buoyancy = require( 'BUOYANCY/buoyancy' );
-  const Demo2DScreenView = require( 'DENSITY_BUOYANCY_COMMON/common/view/Demo2DScreenView' );
+  const BuoyancyApplicationsModel = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/model/BuoyancyApplicationsModel' );
+  const BuoyancyApplicationsScreenView = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/view/BuoyancyApplicationsScreenView' );
   const DensityBuoyancyCommonColorProfile = require( 'DENSITY_BUOYANCY_COMMON/common/view/DensityBuoyancyCommonColorProfile' );
-  const DensityBuoyancyModel = require( 'DENSITY_BUOYANCY_COMMON/common/model/DensityBuoyancyModel' );
   const Screen = require( 'JOIST/Screen' );
 
   // strings
@@ -24,8 +24,8 @@ define( require => {
      */
     constructor( tandem ) {
       super(
-        () => new DensityBuoyancyModel( tandem.createTandem( 'model' ) ),
-        model => new Demo2DScreenView( model, tandem.createTandem( 'view' ) ),
+        () => new BuoyancyApplicationsModel( tandem.createTandem( 'model' ) ),
+        model => new BuoyancyApplicationsScreenView( model, tandem.createTandem( 'view' ) ),
         {
           name: screenApplicationsString,
           backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
