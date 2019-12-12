@@ -38,10 +38,10 @@ define( require => {
   // until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
   SimLauncher.launch( () => {
     const sim = new Sim( buoyancyTitleString, [
-      new IntroScreen( Tandem.rootTandem.createTandem( 'introScreen' ) ),
-      new ExploreScreen( Tandem.rootTandem.createTandem( 'playgroundScreen' ) ),
-      new ShapesScreen( Tandem.rootTandem.createTandem( 'shapesScreen' ) ),
-      new ApplicationsScreen( Tandem.rootTandem.createTandem( 'submarineScreen' ) )
+      new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
+      new ExploreScreen( Tandem.ROOT.createTandem( 'playgroundScreen' ) ),
+      new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
+      new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) )
     ], simOptions );
     sim.start();
   } );
