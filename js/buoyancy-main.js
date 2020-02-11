@@ -10,6 +10,7 @@ define( require => {
 
   // modules
   const ApplicationsScreen = require( 'BUOYANCY/view/ApplicationsScreen' );
+  const DevScreen = require( 'BUOYANCY/view/DevScreen' );
   const ExploreScreen = require( 'BUOYANCY/view/ExploreScreen' );
   const IntroScreen = require( 'BUOYANCY/view/IntroScreen' );
   const ShapesScreen = require( 'BUOYANCY/view/ShapesScreen' );
@@ -41,7 +42,8 @@ define( require => {
       new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
       new ExploreScreen( Tandem.ROOT.createTandem( 'playgroundScreen' ) ),
       new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
-      new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) )
+      new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) ),
+      new DevScreen( Tandem.ROOT.createTandem( 'devScreen' ) )
     ], simOptions );
     sim.start();
   } );
