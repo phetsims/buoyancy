@@ -5,35 +5,34 @@
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const buoyancy = require( 'BUOYANCY/buoyancy' );
-  const BuoyancyApplicationsModel = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/model/BuoyancyApplicationsModel' );
-  const BuoyancyApplicationsScreenView = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/view/BuoyancyApplicationsScreenView' );
-  const DensityBuoyancyCommonColorProfile = require( 'DENSITY_BUOYANCY_COMMON/common/view/DensityBuoyancyCommonColorProfile' );
-  const Screen = require( 'JOIST/Screen' );
+import BuoyancyApplicationsModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyApplicationsModel.js';
+import BuoyancyApplicationsScreenView
+  from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyApplicationsScreenView.js';
+import DensityBuoyancyCommonColorProfile
+  from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
+import Screen from '../../../joist/js/Screen.js';
+import buoyancyStrings from '../buoyancy-strings.js';
+import buoyancy from '../buoyancy.js';
 
-  // strings
-  const screenApplicationsString = require( 'string!BUOYANCY/screen.applications' );
+const screenApplicationsString = buoyancyStrings.screen.applications;
 
-  class ApplicationsScreen extends Screen {
-    /**
-     * @param {Tandem} tandem
-     */
-    constructor( tandem ) {
-      super(
-        () => new BuoyancyApplicationsModel( tandem.createTandem( 'model' ) ),
-        model => new BuoyancyApplicationsScreenView( model, tandem.createTandem( 'view' ) ),
-        {
-          name: screenApplicationsString,
-          backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
-          tandem: tandem
-        }
-      );
-    }
+class ApplicationsScreen extends Screen {
+  /**
+   * @param {Tandem} tandem
+   */
+  constructor( tandem ) {
+    super(
+      () => new BuoyancyApplicationsModel( tandem.createTandem( 'model' ) ),
+      model => new BuoyancyApplicationsScreenView( model, tandem.createTandem( 'view' ) ),
+      {
+        name: screenApplicationsString,
+        backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
+        tandem: tandem
+      }
+    );
   }
+}
 
-  return buoyancy.register( 'ApplicationsScreen', ApplicationsScreen );
-} );
+buoyancy.register( 'ApplicationsScreen', ApplicationsScreen );
+export default ApplicationsScreen;

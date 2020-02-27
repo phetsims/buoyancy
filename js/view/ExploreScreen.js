@@ -5,35 +5,33 @@
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const buoyancy = require( 'BUOYANCY/buoyancy' );
-  const BuoyancyExploreModel = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/model/BuoyancyExploreModel' );
-  const BuoyancyExploreScreenView = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/view/BuoyancyExploreScreenView' );
-  const DensityBuoyancyCommonColorProfile = require( 'DENSITY_BUOYANCY_COMMON/common/view/DensityBuoyancyCommonColorProfile' );
-  const Screen = require( 'JOIST/Screen' );
+import BuoyancyExploreModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyExploreModel.js';
+import BuoyancyExploreScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyExploreScreenView.js';
+import DensityBuoyancyCommonColorProfile
+  from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
+import Screen from '../../../joist/js/Screen.js';
+import buoyancyStrings from '../buoyancy-strings.js';
+import buoyancy from '../buoyancy.js';
 
-  // strings
-  const screenExploreString = require( 'string!BUOYANCY/screen.explore' );
+const screenExploreString = buoyancyStrings.screen.explore;
 
-  class ExploreScreen extends Screen {
-    /**
-     * @param {Tandem} tandem
-     */
-    constructor( tandem ) {
-      super(
-        () => new BuoyancyExploreModel( tandem.createTandem( 'model' ) ),
-        model => new BuoyancyExploreScreenView( model, tandem.createTandem( 'view' ) ),
-        {
-          name: screenExploreString,
-          backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
-          tandem: tandem
-        }
-      );
-    }
+class ExploreScreen extends Screen {
+  /**
+   * @param {Tandem} tandem
+   */
+  constructor( tandem ) {
+    super(
+      () => new BuoyancyExploreModel( tandem.createTandem( 'model' ) ),
+      model => new BuoyancyExploreScreenView( model, tandem.createTandem( 'view' ) ),
+      {
+        name: screenExploreString,
+        backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
+        tandem: tandem
+      }
+    );
   }
+}
 
-  return buoyancy.register( 'ExploreScreen', ExploreScreen );
-} );
+buoyancy.register( 'ExploreScreen', ExploreScreen );
+export default ExploreScreen;

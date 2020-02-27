@@ -5,46 +5,42 @@
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const ApplicationsScreen = require( 'BUOYANCY/view/ApplicationsScreen' );
-  const DevScreen = require( 'BUOYANCY/view/DevScreen' );
-  const ExploreScreen = require( 'BUOYANCY/view/ExploreScreen' );
-  const IntroScreen = require( 'BUOYANCY/view/IntroScreen' );
-  const ShapesScreen = require( 'BUOYANCY/view/ShapesScreen' );
-  const Sim = require( 'JOIST/Sim' );
-  const SimLauncher = require( 'JOIST/SimLauncher' );
-  const Tandem = require( 'TANDEM/Tandem' );
+import Sim from '../../joist/js/Sim.js';
+import SimLauncher from '../../joist/js/SimLauncher.js';
+import Tandem from '../../tandem/js/Tandem.js';
+import buoyancyStrings from './buoyancy-strings.js';
+import ApplicationsScreen from './view/ApplicationsScreen.js';
+import DevScreen from './view/DevScreen.js';
+import ExploreScreen from './view/ExploreScreen.js';
+import IntroScreen from './view/IntroScreen.js';
+import ShapesScreen from './view/ShapesScreen.js';
 
-  // strings
-  const buoyancyTitleString = require( 'string!BUOYANCY/buoyancy.title' );
+const buoyancyTitleString = buoyancyStrings.buoyancy.title;
 
-  const simOptions = {
-    credits: {
-      //TODO fill in credits, all of these fields are optional, see joist.CreditsNode
-      leadDesign: '',
-      softwareDevelopment: '',
-      team: '',
-      qualityAssurance: '',
-      graphicArts: '',
-      soundDesign: '',
-      thanks: ''
-    },
-    webgl: true
-  };
+const simOptions = {
+  credits: {
+    //TODO fill in credits, all of these fields are optional, see joist.CreditsNode
+    leadDesign: '',
+    softwareDevelopment: '',
+    team: '',
+    qualityAssurance: '',
+    graphicArts: '',
+    soundDesign: '',
+    thanks: ''
+  },
+  webgl: true
+};
 
-  // launch the sim - beware that scenery Image nodes created outside of SimLauncher.launch() will have zero bounds
-  // until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
-  SimLauncher.launch( () => {
-    const sim = new Sim( buoyancyTitleString, [
-      new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
-      new ExploreScreen( Tandem.ROOT.createTandem( 'playgroundScreen' ) ),
-      new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
-      new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) ),
-      new DevScreen( Tandem.ROOT.createTandem( 'devScreen' ) )
-    ], simOptions );
-    sim.start();
-  } );
+// launch the sim - beware that scenery Image nodes created outside of SimLauncher.launch() will have zero bounds
+// until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
+SimLauncher.launch( () => {
+  const sim = new Sim( buoyancyTitleString, [
+    new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
+    new ExploreScreen( Tandem.ROOT.createTandem( 'playgroundScreen' ) ),
+    new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
+    new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) ),
+    new DevScreen( Tandem.ROOT.createTandem( 'devScreen' ) )
+  ], simOptions );
+  sim.start();
 } );

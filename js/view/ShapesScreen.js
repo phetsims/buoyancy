@@ -5,35 +5,33 @@
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const buoyancy = require( 'BUOYANCY/buoyancy' );
-  const BuoyancyShapesModel = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/model/BuoyancyShapesModel' );
-  const BuoyancyShapesScreenView = require( 'DENSITY_BUOYANCY_COMMON/buoyancy/view/BuoyancyShapesScreenView' );
-  const DensityBuoyancyCommonColorProfile = require( 'DENSITY_BUOYANCY_COMMON/common/view/DensityBuoyancyCommonColorProfile' );
-  const Screen = require( 'JOIST/Screen' );
+import BuoyancyShapesModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyShapesModel.js';
+import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyShapesScreenView.js';
+import DensityBuoyancyCommonColorProfile
+  from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
+import Screen from '../../../joist/js/Screen.js';
+import buoyancyStrings from '../buoyancy-strings.js';
+import buoyancy from '../buoyancy.js';
 
-  // strings
-  const screenShapesString = require( 'string!BUOYANCY/screen.shapes' );
+const screenShapesString = buoyancyStrings.screen.shapes;
 
-  class ShapesScreen extends Screen {
-    /**
-     * @param {Tandem} tandem
-     */
-    constructor( tandem ) {
-      super(
-        () => new BuoyancyShapesModel( tandem.createTandem( 'model' ) ),
-        model => new BuoyancyShapesScreenView( model, tandem.createTandem( 'view' ) ),
-        {
-          name: screenShapesString,
-          backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
-          tandem: tandem
-        }
-      );
-    }
+class ShapesScreen extends Screen {
+  /**
+   * @param {Tandem} tandem
+   */
+  constructor( tandem ) {
+    super(
+      () => new BuoyancyShapesModel( tandem.createTandem( 'model' ) ),
+      model => new BuoyancyShapesScreenView( model, tandem.createTandem( 'view' ) ),
+      {
+        name: screenShapesString,
+        backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
+        tandem: tandem
+      }
+    );
   }
+}
 
-  return buoyancy.register( 'ShapesScreen', ShapesScreen );
-} );
+buoyancy.register( 'ShapesScreen', ShapesScreen );
+export default ShapesScreen;
