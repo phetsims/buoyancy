@@ -7,7 +7,7 @@
   <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="phet-sim-level" content="development">
-  
+
   <title>buoyancy</title>
 </head>
 
@@ -19,36 +19,74 @@
 
   window.phet = window.phet || {};
   window.phet.chipper = window.phet.chipper || {};
-  window.phet.chipper.packageObject = {
-    "name": "buoyancy",
-    "version": "1.0.0-dev.2",
-    "license": "GPL-3.0",
-    "repository": { "type": "git", "url": "https://github.com/phetsims/buoyancy.git" },
-    "devDependencies": { "grunt": "~1.0.0" },
-    "phet": {
-      "colorProfile": true,
-      "requirejsNamespace": "BUOYANCY",
-      "phetLibs": [ "density-buoyancy-common", "mobius" ],
-      "preload": [ "../sherpa/lib/poly-decomp-0.3.0.js", "../sherpa/lib/matter-0.14.2.js", "../sherpa/lib/p2-0.7.1.js", "../sherpa/lib/three-r104.js" ],
-      "runnable": true,
-      "supportedBrands": [ "phet", "adapted-from-phet" ],
-      "simulation": true
-    },
-    "eslintConfig": {
-      "extends": "../chipper/eslint/sim_eslintrc.js",
-      "globals": { "Matter": false, "p2": false, "THREE": false }
-    }
-  };
-  window.phet.chipper.stringRepos = [ {
-    "repo": "buoyancy",
-    "requirejsNamespace": "BUOYANCY"
-  }, { "repo": "density-buoyancy-common", "requirejsNamespace": "DENSITY_BUOYANCY_COMMON" }, {
-    "repo": "joist",
-    "requirejsNamespace": "JOIST"
-  }, { "repo": "scenery-phet", "requirejsNamespace": "SCENERY_PHET" }, {
-    "repo": "sun",
-    "requirejsNamespace": "SUN"
-  }, { "repo": "tambo", "requirejsNamespace": "TAMBO" } ];
+  window.phet.chipper.packageObject =
+    {
+      "name": "buoyancy",
+      "version": "1.0.0-dev.2",
+      "license": "GPL-3.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/phetsims/buoyancy.git"
+      },
+      "devDependencies": {
+        "grunt": "~1.0.0"
+      },
+      "phet": {
+        "colorProfile": true,
+        "requirejsNamespace": "BUOYANCY",
+        "phetLibs": [
+          "density-buoyancy-common",
+          "mobius"
+        ],
+        "preload": [
+          "../sherpa/lib/poly-decomp-0.3.0.js",
+          "../sherpa/lib/matter-0.14.2.js",
+          "../sherpa/lib/p2-0.7.1.js",
+          "../sherpa/lib/three-r104.js"
+        ],
+        "runnable": true,
+        "supportedBrands": [
+          "phet",
+          "adapted-from-phet"
+        ],
+        "simulation": true
+      },
+      "eslintConfig": {
+        "extends": "../chipper/eslint/sim_eslintrc.js",
+        "globals": {
+          "Matter": false,
+          "p2": false,
+          "THREE": false
+        }
+      }
+    };
+  window.phet.chipper.stringRepos =
+    [
+      {
+        "repo": "buoyancy",
+        "requirejsNamespace": "BUOYANCY"
+      },
+      {
+        "repo": "density-buoyancy-common",
+        "requirejsNamespace": "DENSITY_BUOYANCY_COMMON"
+      },
+      {
+        "repo": "joist",
+        "requirejsNamespace": "JOIST"
+      },
+      {
+        "repo": "scenery-phet",
+        "requirejsNamespace": "SCENERY_PHET"
+      },
+      {
+        "repo": "sun",
+        "requirejsNamespace": "SUN"
+      },
+      {
+        "repo": "tambo",
+        "requirejsNamespace": "TAMBO"
+      }
+    ];
 
   // Identify the brand (assume generated brand if not provided with query parameters)
   const brandMatch = location.search.match( /brand=([^&]+)/ );
