@@ -12,7 +12,7 @@ import BuoyancyApplicationsScreenView
 import DensityBuoyancyCommonColorProfile
   from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
 import Screen from '../../../joist/js/Screen.js';
-import buoyancyStrings from '../buoyancy-strings.js';
+import buoyancyStrings from '../buoyancyStrings.js';
 import buoyancy from '../buoyancy.js';
 
 const screenApplicationsString = buoyancyStrings.screen.applications;

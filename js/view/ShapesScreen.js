@@ -11,7 +11,7 @@ import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyan
 import DensityBuoyancyCommonColorProfile
   from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
 import Screen from '../../../joist/js/Screen.js';
-import buoyancyStrings from '../buoyancy-strings.js';
+import buoyancyStrings from '../buoyancyStrings.js';
 import buoyancy from '../buoyancy.js';
 
 const screenShapesString = buoyancyStrings.screen.shapes;
