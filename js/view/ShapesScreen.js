@@ -8,11 +8,10 @@
 
 import BuoyancyShapesModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyShapesModel.js';
 import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyShapesScreenView.js';
-import DensityBuoyancyCommonColorProfile
-  from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
+import DensityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
 import Screen from '../../../joist/js/Screen.js';
-import buoyancyStrings from '../buoyancyStrings.js';
 import buoyancy from '../buoyancy.js';
+import buoyancyStrings from '../buoyancyStrings.js';
 
 const screenShapesString = buoyancyStrings.screen.shapes;
 
