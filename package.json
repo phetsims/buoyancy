@@ -26,10 +26,7 @@
       "phet",
       "adapted-from-phet"
     ],
-    "simulation": true,
-    "features": {
-      "supportsPanAndZoom": false
-    }
+    "simulation": true
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_eslintrc.js",
