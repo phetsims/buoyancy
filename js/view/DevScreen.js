@@ -8,7 +8,7 @@
 
 import Demo3DModel from '../../../density-buoyancy-common/js/common/model/Demo3DModel.js';
 import Demo3DScreenView from '../../../density-buoyancy-common/js/common/view/Demo3DScreenView.js';
-import DensityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColorProfile.js';
+import DensityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/densityBuoyancyCommonColorProfile.js';
 import Screen from '../../../joist/js/Screen.js';
 import buoyancy from '../buoyancy.js';
 
