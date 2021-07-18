@@ -8,7 +8,7 @@
 
 import BuoyancyApplicationsModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyApplicationsModel.js';
 import BuoyancyApplicationsScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyApplicationsScreenView.js';
-import DensityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/densityBuoyancyCommonColorProfile.js';
+import densityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/densityBuoyancyCommonColorProfile.js';
 import Screen from '../../../joist/js/Screen.js';
 import buoyancy from '../buoyancy.js';
 import buoyancyStrings from '../buoyancyStrings.js';
@@ -25,7 +25,7 @@ class ApplicationsScreen extends Screen {
       model => new BuoyancyApplicationsScreenView( model, tandem.createTandem( 'view' ) ),
       {
         name: screenApplicationsString,
-        backgroundColorProperty: DensityBuoyancyCommonColorProfile.skyBottomProperty,
+        backgroundColorProperty: densityBuoyancyCommonColorProfile.skyBottomProperty,
         tandem: tandem
       }
     );
