@@ -8,7 +8,7 @@
 
 import Demo3DModel from '../../../density-buoyancy-common/js/common/model/Demo3DModel.js';
 import Demo3DScreenView from '../../../density-buoyancy-common/js/common/view/Demo3DScreenView.js';
-import densityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/densityBuoyancyCommonColorProfile.js';
+import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import Screen from '../../../joist/js/Screen.js';
 import buoyancy from '../buoyancy.js';
 
@@ -22,7 +22,7 @@ class DevScreen extends Screen {
       model => new Demo3DScreenView( model, tandem.createTandem( 'view' ) ),
       {
         name: 'Dev',
-        backgroundColorProperty: densityBuoyancyCommonColorProfile.skyBottomProperty,
+        backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
         tandem: tandem
       }
     );

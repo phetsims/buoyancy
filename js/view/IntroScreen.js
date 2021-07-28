@@ -8,7 +8,7 @@
 
 import BuoyancyIntroModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyIntroModel.js';
 import BuoyancyIntroScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyIntroScreenView.js';
-import densityBuoyancyCommonColorProfile from '../../../density-buoyancy-common/js/common/view/densityBuoyancyCommonColorProfile.js';
+import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import Screen from '../../../joist/js/Screen.js';
 import buoyancy from '../buoyancy.js';
 import buoyancyStrings from '../buoyancyStrings.js';
@@ -25,7 +25,7 @@ class IntroScreen extends Screen {
       model => new BuoyancyIntroScreenView( model, tandem.createTandem( 'view' ) ),
       {
         name: screenIntroString,
-        backgroundColorProperty: densityBuoyancyCommonColorProfile.skyBottomProperty,
+        backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
         tandem: tandem
       }
     );
