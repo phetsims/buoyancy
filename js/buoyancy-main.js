@@ -11,7 +11,6 @@ import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import buoyancyStrings from './buoyancyStrings.js';
 import ApplicationsScreen from './view/ApplicationsScreen.js';
-import DevScreen from './view/DevScreen.js';
 import ExploreScreen from './view/ExploreScreen.js';
 import IntroScreen from './view/IntroScreen.js';
 import ShapesScreen from './view/ShapesScreen.js';
@@ -39,8 +38,7 @@ simLauncher.launch( () => {
     new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
     new ExploreScreen( Tandem.ROOT.createTandem( 'playgroundScreen' ) ),
     new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
-    new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) ),
-    new DevScreen( Tandem.ROOT.createTandem( 'devScreen' ) )
+    new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) )
   ], simOptions );
   sim.start();
 } );
