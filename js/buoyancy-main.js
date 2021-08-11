@@ -9,11 +9,11 @@
 import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
+import ApplicationsScreen from './applications/ApplicationsScreen.js';
 import buoyancyStrings from './buoyancyStrings.js';
-import ApplicationsScreen from './view/ApplicationsScreen.js';
-import ExploreScreen from './view/ExploreScreen.js';
-import IntroScreen from './view/IntroScreen.js';
-import ShapesScreen from './view/ShapesScreen.js';
+import ExploreScreen from './explore/ExploreScreen.js';
+import IntroScreen from './intro/IntroScreen.js';
+import ShapesScreen from './shapes/ShapesScreen.js';
 
 const buoyancyTitleString = buoyancyStrings.buoyancy.title;
 
