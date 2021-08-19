@@ -21,8 +21,12 @@ class ApplicationsScreen extends Screen {
    */
   constructor( tandem ) {
     super(
-      () => new BuoyancyApplicationsModel( tandem.createTandem( 'model' ) ),
-      model => new BuoyancyApplicationsScreenView( model, tandem.createTandem( 'view' ) ),
+      () => new BuoyancyApplicationsModel( {
+        tandem: tandem.createTandem( 'model' )
+      } ),
+      model => new BuoyancyApplicationsScreenView( model, {
+        tandem: tandem.createTandem( 'view' )
+      } ),
       {
         name: screenApplicationsString,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,

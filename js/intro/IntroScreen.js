@@ -21,8 +21,12 @@ class IntroScreen extends Screen {
    */
   constructor( tandem ) {
     super(
-      () => new BuoyancyIntroModel( tandem.createTandem( 'model' ) ),
-      model => new BuoyancyIntroScreenView( model, tandem.createTandem( 'view' ) ),
+      () => new BuoyancyIntroModel( {
+        tandem: tandem.createTandem( 'model' )
+      } ),
+      model => new BuoyancyIntroScreenView( model, {
+        tandem: tandem.createTandem( 'view' )
+      } ),
       {
         name: screenIntroString,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,

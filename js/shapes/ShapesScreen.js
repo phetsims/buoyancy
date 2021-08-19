@@ -21,8 +21,12 @@ class ShapesScreen extends Screen {
    */
   constructor( tandem ) {
     super(
-      () => new BuoyancyShapesModel( tandem.createTandem( 'model' ) ),
-      model => new BuoyancyShapesScreenView( model, tandem.createTandem( 'view' ) ),
+      () => new BuoyancyShapesModel( {
+        tandem: tandem.createTandem( 'model' )
+      } ),
+      model => new BuoyancyShapesScreenView( model, {
+        tandem: tandem.createTandem( 'view' )
+      } ),
       {
         name: screenShapesString,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,

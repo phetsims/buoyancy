@@ -21,8 +21,12 @@ class ExploreScreen extends Screen {
    */
   constructor( tandem ) {
     super(
-      () => new BuoyancyExploreModel( tandem.createTandem( 'model' ) ),
-      model => new BuoyancyExploreScreenView( model, tandem.createTandem( 'view' ) ),
+      () => new BuoyancyExploreModel( {
+        tandem: tandem.createTandem( 'model' )
+      } ),
+      model => new BuoyancyExploreScreenView( model, {
+        tandem: tandem.createTandem( 'view' )
+      } ),
       {
         name: screenExploreString,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
