@@ -1,0 +1,20 @@
+{
+  "extends": "../chipper/tsconfig-core.json",
+  "references": [
+    {
+      "path": "../density-buoyancy-common"
+    },
+    {
+      "path": "../mobius"
+    },
+    {
+      "path": "../joist"
+    }
+  ],
+  "include": [
+    "js/**/*",
+    "sounds/**/*",
+    "mipmaps/**/*",
+    "images/**/*"
+  ]
+}
