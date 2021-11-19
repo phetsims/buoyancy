@@ -3,11 +3,23 @@
 /**
  * Auto-generated from modulify, DO NOT manually modify.
  */
-
+/* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
 import buoyancy from './buoyancy.js';
 
-const buoyancyStrings = getStringModule( 'BUOYANCY' );
+type StringsType = {
+  'buoyancy': {
+    'title': string
+  },
+  'screen': {
+    'intro': string,
+    'explore': string,
+    'shapes': string,
+    'applications': string
+  }
+};
+
+const buoyancyStrings = getStringModule( 'BUOYANCY' ) as StringsType;
 
 buoyancy.register( 'buoyancyStrings', buoyancyStrings );
 
