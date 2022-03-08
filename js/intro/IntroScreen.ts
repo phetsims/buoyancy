@@ -6,29 +6,27 @@
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
-import BuoyancyApplicationsModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyApplicationsModel.js';
-import BuoyancyApplicationsScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyApplicationsScreenView.js';
+import BuoyancyIntroModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyIntroModel.js';
+import BuoyancyIntroScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyIntroScreenView.js';
 import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import Screen from '../../../joist/js/Screen.js';
+import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import buoyancyStrings from '../buoyancyStrings.js';
 
-const screenApplicationsString = buoyancyStrings.screen.applications;
+const screenIntroString = buoyancyStrings.screen.intro;
 
-class ApplicationsScreen extends Screen {
-  /**
-   * @param {Tandem} tandem
-   */
-  constructor( tandem ) {
+class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntroScreenView> {
+  constructor( tandem: Tandem ) {
     super(
-      () => new BuoyancyApplicationsModel( {
+      () => new BuoyancyIntroModel( {
         tandem: tandem.createTandem( 'model' )
       } ),
-      model => new BuoyancyApplicationsScreenView( model, {
+      model => new BuoyancyIntroScreenView( model, {
         tandem: tandem.createTandem( 'view' )
       } ),
       {
-        name: screenApplicationsString,
+        name: screenIntroString,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
         tandem: tandem
       }
@@ -36,5 +34,5 @@ class ApplicationsScreen extends Screen {
   }
 }
 
-buoyancy.register( 'ApplicationsScreen', ApplicationsScreen );
-export default ApplicationsScreen;
+buoyancy.register( 'IntroScreen', IntroScreen );
+export default IntroScreen;

@@ -10,16 +10,14 @@ import BuoyancyShapesModel from '../../../density-buoyancy-common/js/buoyancy/mo
 import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyShapesScreenView.js';
 import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import Screen from '../../../joist/js/Screen.js';
+import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import buoyancyStrings from '../buoyancyStrings.js';
 
 const screenShapesString = buoyancyStrings.screen.shapes;
 
-class ShapesScreen extends Screen {
-  /**
-   * @param {Tandem} tandem
-   */
-  constructor( tandem ) {
+class ShapesScreen extends Screen<BuoyancyShapesModel, BuoyancyShapesScreenView> {
+  constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyShapesModel( {
         tandem: tandem.createTandem( 'model' )
