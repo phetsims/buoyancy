@@ -16,7 +16,7 @@ import buoyancyStrings from '../buoyancyStrings.js';
 
 const screenIntroString = buoyancyStrings.screen.intro;
 
-class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntroScreenView> {
+export default class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntroScreenView> {
   constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyIntroModel( {
@@ -35,4 +35,3 @@ class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntroScreenView> {
 }
 
 buoyancy.register( 'IntroScreen', IntroScreen );
-export default IntroScreen;

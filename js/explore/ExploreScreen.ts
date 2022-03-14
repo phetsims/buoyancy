@@ -16,7 +16,7 @@ import buoyancyStrings from '../buoyancyStrings.js';
 
 const screenExploreString = buoyancyStrings.screen.explore;
 
-class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
+export default class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
   constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyExploreModel( {
@@ -35,4 +35,3 @@ class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenVi
 }
 
 buoyancy.register( 'ExploreScreen', ExploreScreen );
-export default ExploreScreen;
