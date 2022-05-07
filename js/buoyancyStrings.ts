@@ -9,13 +9,13 @@ import buoyancy from './buoyancy.js';
 
 type StringsType = {
   'buoyancy': {
-    'title': string
-  },
+    'title': string;
+  };
   'screen': {
-    'intro': string,
-    'explore': string,
-    'shapes': string,
-    'applications': string
+    'intro': string;
+    'explore': string;
+    'shapes': string;
+    'applications': string;
   }
 };
 
