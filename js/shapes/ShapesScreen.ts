@@ -17,7 +17,7 @@ import buoyancyStrings from '../buoyancyStrings.js';
 const screenShapesString = buoyancyStrings.screen.shapes;
 
 export default class ShapesScreen extends Screen<BuoyancyShapesModel, BuoyancyShapesScreenView> {
-  constructor( tandem: Tandem ) {
+  public constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyShapesModel( {
         tandem: tandem.createTandem( 'model' )

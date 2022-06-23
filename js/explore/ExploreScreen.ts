@@ -17,7 +17,7 @@ import buoyancyStrings from '../buoyancyStrings.js';
 const screenExploreString = buoyancyStrings.screen.explore;
 
 export default class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
-  constructor( tandem: Tandem ) {
+  public constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyExploreModel( {
         tandem: tandem.createTandem( 'model' )

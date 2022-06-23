@@ -17,7 +17,7 @@ import buoyancyStrings from '../buoyancyStrings.js';
 const screenApplicationsString = buoyancyStrings.screen.applications;
 
 export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel, BuoyancyApplicationsScreenView> {
-  constructor( tandem: Tandem ) {
+  public constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyApplicationsModel( {
         tandem: tandem.createTandem( 'model' )
