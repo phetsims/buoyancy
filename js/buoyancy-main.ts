@@ -36,9 +36,9 @@ const simOptions: SimOptions = {
 simLauncher.launch( () => {
   const sim = new Sim( buoyancyTitleString, [
     new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
-    new ExploreScreen( Tandem.ROOT.createTandem( 'playgroundScreen' ) ),
+    new ExploreScreen( Tandem.ROOT.createTandem( 'exploreScreen' ) ),
     new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
-    new ApplicationsScreen( Tandem.ROOT.createTandem( 'submarineScreen' ) )
+    new ApplicationsScreen( Tandem.ROOT.createTandem( 'applicationsScreen' ) )
   ], simOptions );
   sim.start();
 } );
