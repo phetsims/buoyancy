@@ -11,17 +11,17 @@ import buoyancy from './buoyancy.js';
 type StringsType = {
   'buoyancy': {
     'title': string;
-    'titleProperty': TReadOnlyProperty<string>;
+    'titleStringProperty': TReadOnlyProperty<string>;
   };
   'screen': {
     'intro': string;
-    'introProperty': TReadOnlyProperty<string>;
+    'introStringProperty': TReadOnlyProperty<string>;
     'explore': string;
-    'exploreProperty': TReadOnlyProperty<string>;
+    'exploreStringProperty': TReadOnlyProperty<string>;
     'shapes': string;
-    'shapesProperty': TReadOnlyProperty<string>;
+    'shapesStringProperty': TReadOnlyProperty<string>;
     'applications': string;
-    'applicationsProperty': TReadOnlyProperty<string>;
+    'applicationsStringProperty': TReadOnlyProperty<string>;
   }
 };
 
