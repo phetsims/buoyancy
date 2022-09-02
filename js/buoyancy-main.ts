@@ -15,7 +15,7 @@ import ExploreScreen from './explore/ExploreScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import ShapesScreen from './shapes/ShapesScreen.js';
 
-const buoyancyTitleString = buoyancyStrings.buoyancy.title;
+const buoyancyTitleStringProperty = buoyancyStrings.buoyancy.titleStringProperty;
 
 const simOptions: SimOptions = {
   credits: {
@@ -34,7 +34,7 @@ const simOptions: SimOptions = {
 // launch the sim - beware that scenery Image nodes created outside of simLauncher.launch() will have zero bounds
 // until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
 simLauncher.launch( () => {
-  const sim = new Sim( buoyancyTitleString, [
+  const sim = new Sim( buoyancyTitleStringProperty, [
     new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
     new ExploreScreen( Tandem.ROOT.createTandem( 'exploreScreen' ) ),
     new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
