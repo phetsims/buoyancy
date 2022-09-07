@@ -12,9 +12,9 @@ import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/com
 import Screen from '../../../joist/js/Screen.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
-import buoyancyStrings from '../buoyancyStrings.js';
+import BuoyancyStrings from '../BuoyancyStrings.js';
 
-const screenApplicationsString = buoyancyStrings.screen.applications;
+const screenApplicationsString = BuoyancyStrings.screen.applications;
 
 export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel, BuoyancyApplicationsScreenView> {
   public constructor( tandem: Tandem ) {

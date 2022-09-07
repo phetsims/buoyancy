@@ -10,12 +10,12 @@ import Sim, { SimOptions } from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import ApplicationsScreen from './applications/ApplicationsScreen.js';
-import buoyancyStrings from './buoyancyStrings.js';
+import BuoyancyStrings from './BuoyancyStrings.js';
 import ExploreScreen from './explore/ExploreScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import ShapesScreen from './shapes/ShapesScreen.js';
 
-const buoyancyTitleStringProperty = buoyancyStrings.buoyancy.titleStringProperty;
+const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty;
 
 const simOptions: SimOptions = {
   credits: {

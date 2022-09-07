@@ -12,9 +12,9 @@ import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/com
 import Screen from '../../../joist/js/Screen.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
-import buoyancyStrings from '../buoyancyStrings.js';
+import BuoyancyStrings from '../BuoyancyStrings.js';
 
-const screenExploreString = buoyancyStrings.screen.explore;
+const screenExploreString = BuoyancyStrings.screen.explore;
 
 export default class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
   public constructor( tandem: Tandem ) {
