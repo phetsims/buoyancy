@@ -14,8 +14,6 @@ import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 
-const screenApplicationsString = BuoyancyStrings.screen.applications;
-
 export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel, BuoyancyApplicationsScreenView> {
   public constructor( tandem: Tandem ) {
     super(
@@ -26,7 +24,7 @@ export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel
         tandem: tandem.createTandem( 'view' )
       } ),
       {
-        name: screenApplicationsString,
+        name: BuoyancyStrings.screen.applicationsStringProperty,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
         tandem: tandem
       }
