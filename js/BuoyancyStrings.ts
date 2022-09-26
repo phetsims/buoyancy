@@ -5,23 +5,23 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
-import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
+import LinkableProperty from '../../axon/js/LinkableProperty.js';
 import buoyancy from './buoyancy.js';
 
 type StringsType = {
   'buoyancy': {
     'title': string;
-    'titleStringProperty': TReadOnlyProperty<string>;
+    'titleStringProperty': LinkableProperty<string>;
   };
   'screen': {
     'intro': string;
-    'introStringProperty': TReadOnlyProperty<string>;
+    'introStringProperty': LinkableProperty<string>;
     'explore': string;
-    'exploreStringProperty': TReadOnlyProperty<string>;
+    'exploreStringProperty': LinkableProperty<string>;
     'shapes': string;
-    'shapesStringProperty': TReadOnlyProperty<string>;
+    'shapesStringProperty': LinkableProperty<string>;
     'applications': string;
-    'applicationsStringProperty': TReadOnlyProperty<string>;
+    'applicationsStringProperty': LinkableProperty<string>;
   }
 };
 
