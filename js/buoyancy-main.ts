@@ -19,7 +19,6 @@ const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty
 
 const simOptions: SimOptions = {
   credits: {
-    //TODO fill in credits, all of these fields are optional, see joist.CreditsNode
     leadDesign: '',
     softwareDevelopment: '',
     team: '',
