@@ -6,6 +6,7 @@
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
+import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim, { SimOptions } from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
@@ -13,6 +14,7 @@ import ApplicationsScreen from './applications/ApplicationsScreen.js';
 import BuoyancyStrings from './BuoyancyStrings.js';
 import ExploreScreen from './explore/ExploreScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
+import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonPreferencesNode.js';
 import ShapesScreen from './shapes/ShapesScreen.js';
 
 const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty;
@@ -27,7 +29,17 @@ const simOptions: SimOptions = {
     soundDesign: '',
     thanks: ''
   },
-  webgl: true
+  webgl: true,
+
+  preferencesModel: new PreferencesModel( {
+    simulationOptions: {
+      customPreferences: [ {
+        createContent: tandem => new DensityBuoyancyCommonPreferencesNode( {
+          tandem: tandem.createTandem( 'simPreferences' )
+        } )
+      } ]
+    }
+  } )
 };
 
 // launch the sim - beware that scenery Image nodes created outside of simLauncher.launch() will have zero bounds
