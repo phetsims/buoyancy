@@ -30,7 +30,13 @@
     "phet-io": {
       "validation": false
     },
-    "supportsOutputJS": true
+    "supportsOutputJS": true,
+    "screenNameKeys": [
+      "BUOYANCY/screen.intro",
+      "BUOYANCY/screen.explore",
+      "BUOYANCY/screen.shapes",
+      "BUOYANCY/screen.applications"
+    ]
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_eslintrc.js",
