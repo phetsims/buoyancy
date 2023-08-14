@@ -2,106 +2,106 @@
   "comment": "# buoyancy 1.0.0-dev.3 Wed Apr 07 2021 10:21:49 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "423d662a3672e3de42852ee6d6fdec705ac98dd5",
-    "branch": "master"
+    "branch": "main"
   },
   "axon": {
     "sha": "2f7d65c8d5614b162208c99e681bf660d902193c",
-    "branch": "master"
+    "branch": "main"
   },
   "brand": {
     "sha": "0bbc0a38a8526ce83961f05afdd62c54c52d0598",
-    "branch": "master"
+    "branch": "main"
   },
   "buoyancy": {
     "sha": "1e63e53efaacf7e1b6894f6bdb119d80a7f5d924",
-    "branch": "master"
+    "branch": "main"
   },
   "chipper": {
     "sha": "64b76d5f464e39c97571844da6a4a35904632d9a",
-    "branch": "master"
+    "branch": "main"
   },
   "density-buoyancy-common": {
     "sha": "3ee6075a68df108ea1c08b979e15f47677521170",
-    "branch": "master"
+    "branch": "main"
   },
   "dot": {
     "sha": "6f608b9729cb5e3eab56c15c0ab8675e78ae8d4f",
-    "branch": "master"
+    "branch": "main"
   },
   "joist": {
     "sha": "728803d851998c1c4a25792ddad31c8583010c2d",
-    "branch": "master"
+    "branch": "main"
   },
   "kite": {
     "sha": "9bca91138ef9cf622724f9eadb437f57373e0af7",
-    "branch": "master"
+    "branch": "main"
   },
   "mobius": {
     "sha": "88c76bd8740bc1fea4f88cce5767144057f2d767",
-    "branch": "master"
+    "branch": "main"
   },
   "phet-core": {
     "sha": "1c57e441cce0cb5074855224ebc324dcbbcd4c70",
-    "branch": "master"
+    "branch": "main"
   },
   "phet-io": {
     "sha": "7531037e446443ef912643719a7a4fb367780ba6",
-    "branch": "master"
+    "branch": "main"
   },
   "phet-io-client-guides": {
     "sha": "c96920e0c93a7bbbe5730ea5998f8245f6bb4146",
-    "branch": "master"
+    "branch": "main"
   },
   "phet-io-wrappers": {
     "sha": "32f18430faeeb05249cad988a30b922684e13f9b",
-    "branch": "master"
+    "branch": "main"
   },
   "phetcommon": {
     "sha": "6b667aab3691469e423abdf2fd7ad4d0ce7ad8df",
-    "branch": "master"
+    "branch": "main"
   },
   "phetmarks": {
     "sha": "c81f330b1c814f41a9d020529bd216470bd2fec6",
-    "branch": "master"
+    "branch": "main"
   },
   "query-string-machine": {
     "sha": "090c44b0ba8e0a7effd2f6a7830f35eac92d59cc",
-    "branch": "master"
+    "branch": "main"
   },
   "scenery": {
     "sha": "82a0ddf63732b938c19deab0cb91c39f90433260",
-    "branch": "master"
+    "branch": "main"
   },
   "scenery-phet": {
     "sha": "cd52a156dcb4d74cad0d8553ef24b6d4dfec6756",
-    "branch": "master"
+    "branch": "main"
   },
   "sherpa": {
     "sha": "f6b2ee4d7039bdf1757dbbce88cfaa8b43dd667d",
-    "branch": "master"
+    "branch": "main"
   },
   "studio": {
     "sha": "be2c9e55d0de683bd9435376b95b35fc509cfa0e",
-    "branch": "master"
+    "branch": "main"
   },
   "sun": {
     "sha": "9a1170b9782876dcc190e98e2aefb25bddbaf9ce",
-    "branch": "master"
+    "branch": "main"
   },
   "tambo": {
     "sha": "93b60fc562fda690c0ac35a423e0b5fb609d9a42",
-    "branch": "master"
+    "branch": "main"
   },
   "tandem": {
     "sha": "33796537fb0ee85d96f2a9119978ea01740cca85",
-    "branch": "master"
+    "branch": "main"
   },
   "twixt": {
     "sha": "141f9a395def6a3e5da48cac968bcea70ee20331",
-    "branch": "master"
+    "branch": "main"
   },
   "utterance-queue": {
     "sha": "30ffcbd69fd2e8a0b3f53386974812c5071b2860",
-    "branch": "master"
+    "branch": "main"
   }
 }
