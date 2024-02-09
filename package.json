@@ -32,6 +32,7 @@
     },
     "supportsOutputJS": true,
     "simFeatures": {
+      "supportsInteractiveDescription": true,
       "supportsSound": true
     },
     "screenNameKeys": [
