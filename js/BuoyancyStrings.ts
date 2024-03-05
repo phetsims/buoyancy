@@ -18,6 +18,8 @@ type StringsType = {
     'introStringProperty': LocalizedStringProperty;
     'explore': string;
     'exploreStringProperty': LocalizedStringProperty;
+    'lab': string;
+    'labStringProperty': LocalizedStringProperty;
     'shapes': string;
     'shapesStringProperty': LocalizedStringProperty;
     'applications': string;

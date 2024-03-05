@@ -16,6 +16,7 @@ import ExploreScreen from './explore/ExploreScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonPreferencesNode.js';
 import ShapesScreen from './shapes/ShapesScreen.js';
+import LabScreen from './lab/LabScreen.js';
 
 const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty;
 
@@ -48,6 +49,7 @@ simLauncher.launch( () => {
   const sim = new Sim( buoyancyTitleStringProperty, [
     new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
     new ExploreScreen( Tandem.ROOT.createTandem( 'exploreScreen' ) ),
+    new LabScreen( Tandem.ROOT.createTandem( 'labScreen' ) ),
     new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),
     new ApplicationsScreen( Tandem.ROOT.createTandem( 'applicationsScreen' ) )
   ], simOptions );
