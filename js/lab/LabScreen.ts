@@ -13,6 +13,8 @@ import Screen from '../../../joist/js/Screen.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
+import ScreenIcon from '../../../joist/js/ScreenIcon.js';
+import FluidDisplacedPanel from '../../../density-buoyancy-common/js/buoyancy/view/FluidDisplacedPanel.js';
 
 export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScreenView> {
   public constructor( tandem: Tandem ) {
@@ -26,6 +28,7 @@ export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScree
       {
         name: BuoyancyStrings.screen.labStringProperty,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
+        homeScreenIcon: new ScreenIcon( FluidDisplacedPanel.createIcon() ),
         tandem: tandem
       }
     );
