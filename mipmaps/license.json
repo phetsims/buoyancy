@@ -6,5 +6,21 @@
     "projectURL": "https://phet.colorado.edu",
     "license": "contact phethelp@colorado.edu",
     "notes": "created by the simulation code"
+  },
+  "intro_screen_icon.png": {
+    "text": [
+      "Copyright 2024 University of Colorado Boulder"
+    ],
+    "projectURL": "https://phet.colorado.edu",
+    "license": "contact phethelp@colorado.edu",
+    "notes": "created by the simulation code"
+  },
+  "applications_screen_icon.png": {
+    "text": [
+      "Copyright 2024 University of Colorado Boulder"
+    ],
+    "projectURL": "https://phet.colorado.edu",
+    "license": "contact phethelp@colorado.edu",
+    "notes": "created by the simulation code"
   }
 }
