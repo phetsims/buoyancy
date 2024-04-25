@@ -17,7 +17,6 @@ import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 
 export default class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
   public constructor( tandem: Tandem ) {
-    const icon = BuoyancyExploreScreenView.getBuoyancyExploreIcon();
     super(
       () => new BuoyancyExploreModel( {
         tandem: tandem.createTandem( 'model' )
@@ -28,7 +27,7 @@ export default class ExploreScreen extends Screen<BuoyancyExploreModel, Buoyancy
       {
         name: BuoyancyStrings.screen.exploreStringProperty,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
-        homeScreenIcon: new ScreenIcon( icon, {
+        homeScreenIcon: new ScreenIcon( BuoyancyExploreScreenView.getBuoyancyExploreIcon(), {
           maxIconWidthProportion: 1,
           maxIconHeightProportion: 1
         } ),
