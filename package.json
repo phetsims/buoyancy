@@ -28,7 +28,6 @@
     ],
     "simulation": true,
     "phet-io": {
-      "validation": false
     },
     "supportsOutputJS": true,
     "simFeatures": {
