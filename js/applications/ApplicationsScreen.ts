@@ -1,9 +1,12 @@
 // Copyright 2019-2024, University of Colorado Boulder
 
 /**
- * Intro screen for Buoyancy
+ * Applications screen for Buoyancy
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
+ * @author Agustin Vallejo (PhET Interactive Simulations)
+ * @author Michael Kauzmann (PhET Interactive Simulations)
+ * @author Sam Reid (PhET Interactive Simulations)
  */
 
 import BuoyancyApplicationsModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyApplicationsModel.js';

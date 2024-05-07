@@ -4,6 +4,8 @@
  * Lab screen for Buoyancy
  *
  * @author Michael Kauzmann (PhET Interactive Simulations)
+ * @author Agustin Vallejo (PhET Interactive Simulations)
+ * @author Sam Reid (PhET Interactive Simulations)
  */
 
 import BuoyancyLabModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyLabModel.js';

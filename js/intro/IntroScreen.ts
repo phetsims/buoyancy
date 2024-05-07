@@ -4,6 +4,9 @@
  * Intro screen for Buoyancy
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
+ * @author Agustin Vallejo (PhET Interactive Simulations)
+ * @author Michael Kauzmann (PhET Interactive Simulations)
+ * @author Sam Reid (PhET Interactive Simulations)
  */
 
 import BuoyancyIntroModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyIntroModel.js';

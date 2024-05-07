@@ -4,6 +4,9 @@
  * Explore screen for Buoyancy
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
+ * @author Agustin Vallejo (PhET Interactive Simulations)
+ * @author Michael Kauzmann (PhET Interactive Simulations)
+ * @author Sam Reid (PhET Interactive Simulations)
  */
 
 import BuoyancyExploreModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyExploreModel.js';
