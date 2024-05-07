@@ -16,6 +16,7 @@ import BuoyancyStrings from '../BuoyancyStrings.js';
 import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
 import intro_screen_icon_png from '../../mipmaps/intro_screen_icon_png.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
+import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
 
 export default class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntroScreenView> {
   public constructor( tandem: Tandem ) {
@@ -34,7 +35,8 @@ export default class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntr
           maxIconWidthProportion: 1,
           maxIconHeightProportion: 1
         } ),
-        tandem: tandem
+        tandem: tandem,
+        createKeyboardHelpNode: () => new DensityBuoyancyCommonKeyboardHelpNode( false, false )
       }
     );
   }

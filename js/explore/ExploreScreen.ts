@@ -14,6 +14,7 @@ import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
+import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
 
 export default class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
   public constructor( tandem: Tandem ) {
@@ -31,7 +32,8 @@ export default class ExploreScreen extends Screen<BuoyancyExploreModel, Buoyancy
           maxIconWidthProportion: 1,
           maxIconHeightProportion: 1
         } ),
-        tandem: tandem
+        tandem: tandem,
+        createKeyboardHelpNode: () => new DensityBuoyancyCommonKeyboardHelpNode( true, true )
       }
     );
   }
