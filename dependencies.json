@@ -1,11 +1,11 @@
 {
-  "comment": "# buoyancy 1.0.0-dev.6 Wed May 08 2024 15:08:18 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# buoyancy 1.0.0-dev.7 Thu May 09 2024 11:29:03 GMT-0500 (Colombia Standard Time)",
   "assert": {
     "sha": "9c7053e4ea4c05d1267b93aedf5f2ca1039a8853",
     "branch": "main"
   },
   "axon": {
-    "sha": "b83f49b448162f9cdca745c428869c5ee94501bf",
+    "sha": "0d7aadacef8e6c2606b321eb81526be85a3b22ae",
     "branch": "main"
   },
   "brand": {
@@ -13,7 +13,7 @@
     "branch": "main"
   },
   "buoyancy": {
-    "sha": "726098c09f18dc37d41163f7783aad2d6d735f63",
+    "sha": "bdbc831bf8e6fac3fd26107a4b19888074f5877a",
     "branch": "main"
   },
   "chipper": {
@@ -21,7 +21,7 @@
     "branch": "main"
   },
   "density-buoyancy-common": {
-    "sha": "d4aa9af852b5ef4ec0226b3d9dc374e0f92353d1",
+    "sha": "762c7b1945338460f11392beeb194e794dbc8cbc",
     "branch": "main"
   },
   "dot": {
@@ -53,7 +53,7 @@
     "branch": "main"
   },
   "phet-io-sim-specific": {
-    "sha": "2a7ab83447a17c6b7fd341900f6b38cb55f6ff14",
+    "sha": "9b14b401fbcf751422b81c8c9d217a8e2a6a21d7",
     "branch": "main"
   },
   "phet-io-wrappers": {
@@ -73,7 +73,7 @@
     "branch": "main"
   },
   "scenery": {
-    "sha": "92e8bc694d4c1d91c36d519ccf517a84f46ff6c0",
+    "sha": "958da18e7a3c16a347b20fa7e03c1bd724545004",
     "branch": "main"
   },
   "scenery-phet": {
