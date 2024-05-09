@@ -1,5 +1,5 @@
 {
-  "comment": "# buoyancy 1.0.0-dev.7 Thu May 09 2024 11:29:03 GMT-0500 (Colombia Standard Time)",
+  "comment": "# buoyancy 1.0.0-dev.8 Thu May 09 2024 12:10:48 GMT-0500 (Colombia Standard Time)",
   "assert": {
     "sha": "9c7053e4ea4c05d1267b93aedf5f2ca1039a8853",
     "branch": "main"
@@ -13,15 +13,15 @@
     "branch": "main"
   },
   "buoyancy": {
-    "sha": "bdbc831bf8e6fac3fd26107a4b19888074f5877a",
+    "sha": "c416c32750cc9b9ee254b048085139077af63ff3",
     "branch": "main"
   },
   "chipper": {
-    "sha": "99db72aebc36d23746195af69b459232fe01bfce",
+    "sha": "c16eff4a12882134f58386840fc3ca7d486bfbf1",
     "branch": "main"
   },
   "density-buoyancy-common": {
-    "sha": "762c7b1945338460f11392beeb194e794dbc8cbc",
+    "sha": "e1f518d41664cc650f3835ebcfe6e854ddd3aa15",
     "branch": "main"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "main"
   },
   "joist": {
-    "sha": "f10ee25acf195658a5d82a877f9c8ca63e42d020",
+    "sha": "97f65f3505c0440f4f8f52775efaf39b55ba3f8b",
     "branch": "main"
   },
   "kite": {
@@ -53,7 +53,7 @@
     "branch": "main"
   },
   "phet-io-sim-specific": {
-    "sha": "9b14b401fbcf751422b81c8c9d217a8e2a6a21d7",
+    "sha": "33fa8ec1c49bee23718aa76ba6bba5d6b1ef4f12",
     "branch": "main"
   },
   "phet-io-wrappers": {
