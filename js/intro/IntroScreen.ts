@@ -39,7 +39,7 @@ export default class IntroScreen extends Screen<BuoyancyIntroModel, BuoyancyIntr
           maxIconHeightProportion: 1
         } ),
         tandem: tandem,
-        createKeyboardHelpNode: () => new DensityBuoyancyCommonKeyboardHelpNode( false, false )
+        createKeyboardHelpNode: () => new DensityBuoyancyCommonKeyboardHelpNode( false, true )
       }
     );
   }
