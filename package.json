@@ -27,7 +27,7 @@
     ],
     "simulation": true,
     "phet-io": {
-      "compareDesignedAPIChanges": true
+      "compareDesignedAPIChanges": false
     },
     "supportsOutputJS": true,
     "simFeatures": {
