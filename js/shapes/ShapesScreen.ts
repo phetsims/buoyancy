@@ -9,8 +9,8 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import BuoyancyShapesModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyShapesModel.js';
-import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyShapesScreenView.js';
+import BuoyancyShapesModel from '../../../density-buoyancy-common/js/buoyancy/model/shapes/BuoyancyShapesModel.js';
+import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyancy/view/shapes/BuoyancyShapesScreenView.js';
 import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import Screen from '../../../joist/js/Screen.js';
 import Tandem from '../../../tandem/js/Tandem.js';
