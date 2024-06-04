@@ -14,13 +14,13 @@ import BuoyancyCompareScreenView from '../../../density-buoyancy-common/js/buoya
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
 import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
-import intro_screen_icon_png from '../../mipmaps/intro_screen_icon_png.js';
+import compare_screen_icon_png from '../../mipmaps/compare_screen_icon_png.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 
 export default class CompareScreen extends Screen<BuoyancyCompareModel, BuoyancyCompareScreenView> {
   public constructor( tandem: Tandem ) {
-    const icon = DensityBuoyancyScreenView.getThreeIcon( intro_screen_icon_png, () => BuoyancyCompareScreenView.getBuoyancyCompareIcon() );
+    const icon = DensityBuoyancyScreenView.getThreeIcon( compare_screen_icon_png, () => BuoyancyCompareScreenView.getBuoyancyCompareIcon() );
 
     super(
       () => new BuoyancyCompareModel( {
