@@ -13,7 +13,7 @@ import Tandem from '../../tandem/js/Tandem.js';
 import ApplicationsScreen from './applications/ApplicationsScreen.js';
 import BuoyancyStrings from './BuoyancyStrings.js';
 import ExploreScreen from './explore/ExploreScreen.js';
-import IntroScreen from './intro/IntroScreen.js';
+import IntroScreen from './compare/IntroScreen.js';
 import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonPreferencesNode.js';
 import ShapesScreen from './shapes/ShapesScreen.js';
 import LabScreen from './lab/LabScreen.js';
