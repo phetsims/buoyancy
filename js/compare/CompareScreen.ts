@@ -10,7 +10,7 @@ import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/com
 import Screen from '../../../joist/js/Screen.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import BuoyancyCompareModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyCompareModel.js';
-import BuoyancyBasicsCompareScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyBasicsCompareScreenView.js';
+import BuoyancyCompareScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyCompareScreenView.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
 import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
@@ -18,15 +18,15 @@ import intro_screen_icon_png from '../../mipmaps/intro_screen_icon_png.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 
-export default class CompareScreen extends Screen<BuoyancyCompareModel, BuoyancyBasicsCompareScreenView> {
+export default class CompareScreen extends Screen<BuoyancyCompareModel, BuoyancyCompareScreenView> {
   public constructor( tandem: Tandem ) {
-    const icon = DensityBuoyancyScreenView.getThreeIcon( intro_screen_icon_png, () => BuoyancyBasicsCompareScreenView.getBuoyancyBasicsCompareIcon() );
+    const icon = DensityBuoyancyScreenView.getThreeIcon( intro_screen_icon_png, () => BuoyancyCompareScreenView.getBuoyancyCompareIcon() );
 
     super(
       () => new BuoyancyCompareModel( {
         tandem: tandem.createTandem( 'model' )
       } ),
-      model => new BuoyancyBasicsCompareScreenView( model, {
+      model => new BuoyancyCompareScreenView( model, {
         tandem: tandem.createTandem( 'view' )
       } ),
       {
