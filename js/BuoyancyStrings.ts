@@ -14,8 +14,8 @@ type StringsType = {
     'titleStringProperty': LocalizedStringProperty;
   };
   'screen': {
-    'intro': string;
-    'introStringProperty': LocalizedStringProperty;
+    'compare': string;
+    'compareStringProperty': LocalizedStringProperty;
     'explore': string;
     'exploreStringProperty': LocalizedStringProperty;
     'lab': string;

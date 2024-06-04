@@ -13,10 +13,10 @@ import Tandem from '../../tandem/js/Tandem.js';
 import ApplicationsScreen from './applications/ApplicationsScreen.js';
 import BuoyancyStrings from './BuoyancyStrings.js';
 import ExploreScreen from './explore/ExploreScreen.js';
-import IntroScreen from './compare/IntroScreen.js';
 import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonPreferencesNode.js';
 import ShapesScreen from './shapes/ShapesScreen.js';
 import LabScreen from './lab/LabScreen.js';
+import CompareScreen from './compare/CompareScreen.js';
 
 const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty;
 
@@ -47,7 +47,7 @@ const simOptions: SimOptions = {
 // until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
 simLauncher.launch( () => {
   const sim = new Sim( buoyancyTitleStringProperty, [
-    new IntroScreen( Tandem.ROOT.createTandem( 'introScreen' ) ),
+    new CompareScreen( Tandem.ROOT.createTandem( 'compareScreen' ) ),
     new ExploreScreen( Tandem.ROOT.createTandem( 'exploreScreen' ) ),
     new LabScreen( Tandem.ROOT.createTandem( 'labScreen' ) ),
     new ShapesScreen( Tandem.ROOT.createTandem( 'shapesScreen' ) ),

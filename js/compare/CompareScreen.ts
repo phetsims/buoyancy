@@ -9,15 +9,19 @@
 import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import Screen from '../../../joist/js/Screen.js';
 import Tandem from '../../../tandem/js/Tandem.js';
-import buoyancyBasics from '../../../buoyancy-basics/js/buoyancyBasics.js';
 import BuoyancyBasicsCompareModel from '../../../density-buoyancy-common/js/buoyancy-basics/model/BuoyancyBasicsCompareModel.js';
 import BuoyancyBasicsCompareScreenView from '../../../density-buoyancy-common/js/buoyancy-basics/view/BuoyancyBasicsCompareScreenView.js';
-import BuoyancyBasicsStrings from '../../../buoyancy-basics/js/BuoyancyBasicsStrings.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
+import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
+import intro_screen_icon_png from '../../mipmaps/intro_screen_icon_png.js';
+import buoyancy from '../buoyancy.js';
+import BuoyancyStrings from '../BuoyancyStrings.js';
 
 export default class CompareScreen extends Screen<BuoyancyBasicsCompareModel, BuoyancyBasicsCompareScreenView> {
   public constructor( tandem: Tandem ) {
+    const icon = DensityBuoyancyScreenView.getThreeIcon( intro_screen_icon_png, () => BuoyancyBasicsCompareScreenView.getBuoyancyBasicsCompareIcon() );
+
     super(
       () => new BuoyancyBasicsCompareModel( {
         tandem: tandem.createTandem( 'model' )
@@ -26,9 +30,9 @@ export default class CompareScreen extends Screen<BuoyancyBasicsCompareModel, Bu
         tandem: tandem.createTandem( 'view' )
       } ),
       {
-        name: BuoyancyBasicsStrings.screen.compareStringProperty,
+        name: BuoyancyStrings.screen.compareStringProperty,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
-        homeScreenIcon: new ScreenIcon( BuoyancyBasicsCompareScreenView.getBuoyancyBasicsCompareIcon(), {
+        homeScreenIcon: new ScreenIcon( icon, {
           maxIconWidthProportion: 1,
           maxIconHeightProportion: 1
         } ),
@@ -39,4 +43,4 @@ export default class CompareScreen extends Screen<BuoyancyBasicsCompareModel, Bu
   }
 }
 
-buoyancyBasics.register( 'CompareScreen', CompareScreen );
+buoyancy.register( 'CompareScreen', CompareScreen );

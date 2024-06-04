@@ -1,7 +1,7 @@
 // Copyright 2019-2024, University of Colorado Boulder
 
 /**
- * Intro screen for Buoyancy
+ * Shapes screen for Buoyancy
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  * @author Agustin Vallejo (PhET Interactive Simulations)

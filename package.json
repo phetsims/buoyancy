@@ -35,7 +35,7 @@
       "supportsSound": true
     },
     "screenNameKeys": [
-      "BUOYANCY/screen.intro",
+      "BUOYANCY/screen.compare",
       "BUOYANCY/screen.explore",
       "BUOYANCY/screen.lab",
       "BUOYANCY/screen.shapes",
