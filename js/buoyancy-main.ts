@@ -35,9 +35,7 @@ const simOptions: SimOptions = {
   preferencesModel: new PreferencesModel( {
     simulationOptions: {
       customPreferences: [ {
-        createContent: tandem => new DensityBuoyancyCommonPreferencesNode( {
-          tandem: tandem.createTandem( 'simPreferences' )
-        } )
+        createContent: tandem => new DensityBuoyancyCommonPreferencesNode( { tandem: tandem } )
       } ]
     }
   } )
