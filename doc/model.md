@@ -1,1 +1,1 @@
-TODO model description
+This simulation is part of the Density Buoyancy Sim Suite, to read about the model, please look for the density-buoyancy-common repository.
