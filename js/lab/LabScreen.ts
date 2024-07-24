@@ -25,7 +25,7 @@ export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScree
       () => new BuoyancyLabModel( {
         tandem: tandem.createTandem( 'model' ),
 
-        // TODO: Move to BuoyancyLabModel, see https://github.com/phetsims/density-buoyancy-common/issues/270
+        // TODO AV: Move to BuoyancyLabModel, see https://github.com/phetsims/density-buoyancy-common/issues/270
         fluidSelectionType: 'all'
       } ),
       model => new BuoyancyLabScreenView( model, {
