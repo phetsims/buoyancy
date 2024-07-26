@@ -24,7 +24,6 @@ export default class CompareScreen extends Screen<BuoyancyCompareModel, Buoyancy
 
     super(
       () => new BuoyancyCompareModel( {
-        fluidSelectionType: 'simple',
         tandem: tandem.createTandem( 'model' )
       } ),
       model => new BuoyancyCompareScreenView( model, {

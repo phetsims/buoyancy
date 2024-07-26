@@ -27,7 +27,6 @@ export default class ShapesScreen extends Screen<BuoyancyShapesModel, BuoyancySh
 
     super(
       () => new BuoyancyShapesModel( {
-        fluidSelectionType: 'all',
         tandem: tandem.createTandem( 'model' )
       } ),
       model => new BuoyancyShapesScreenView( model, {

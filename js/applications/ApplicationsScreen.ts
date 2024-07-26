@@ -26,7 +26,6 @@ export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel
     const icon = DensityBuoyancyScreenView.getThreeIcon( applications_screen_icon_png, () => BuoyancyApplicationsScreenView.getBuoyancyApplicationsIcon() );
     super(
       () => new BuoyancyApplicationsModel( {
-        fluidSelectionType: 'all',
         tandem: tandem.createTandem( 'model' )
       } ),
       model => new BuoyancyApplicationsScreenView( model, {

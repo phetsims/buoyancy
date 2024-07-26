@@ -23,7 +23,6 @@ export default class ExploreScreen extends Screen<BuoyancyExploreModel, Buoyancy
   public constructor( tandem: Tandem ) {
     super(
       () => new BuoyancyExploreModel( {
-        fluidSelectionType: 'all',
         tandem: tandem.createTandem( 'model' )
       } ),
       model => new BuoyancyExploreScreenView( model, {
