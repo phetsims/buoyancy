@@ -20,10 +20,11 @@ import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/commo
 import shapes_screen_icon_png from '../../mipmaps/shapes_screen_icon_png.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
+import getBuoyancyShapesIcon from '../../../density-buoyancy-common/js/buoyancy/view/shapes/getBuoyancyShapesIcon.js';
 
 export default class ShapesScreen extends Screen<BuoyancyShapesModel, BuoyancyShapesScreenView> {
   public constructor( tandem: Tandem ) {
-    const icon = DensityBuoyancyScreenView.getThreeIcon( shapes_screen_icon_png, () => BuoyancyShapesScreenView.getBuoyancyShapesIcon() );
+    const icon = DensityBuoyancyScreenView.getThreeIcon( shapes_screen_icon_png, () => getBuoyancyShapesIcon() );
 
     super(
       () => new BuoyancyShapesModel( {
