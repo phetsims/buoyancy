@@ -18,6 +18,7 @@ import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
+import getBuoyancyExploreIcon from '../../../density-buoyancy-common/js/buoyancy/view/getBuoyancyExploreIcon.js';
 
 export default class ExploreScreen extends Screen<BuoyancyExploreModel, BuoyancyExploreScreenView> {
   public constructor( tandem: Tandem ) {
@@ -31,7 +32,7 @@ export default class ExploreScreen extends Screen<BuoyancyExploreModel, Buoyancy
       {
         name: BuoyancyStrings.screen.exploreStringProperty,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
-        homeScreenIcon: new ScreenIcon( BuoyancyExploreScreenView.getBuoyancyExploreIcon(), {
+        homeScreenIcon: new ScreenIcon( getBuoyancyExploreIcon(), {
           maxIconWidthProportion: 1,
           maxIconHeightProportion: 1
         } ),
