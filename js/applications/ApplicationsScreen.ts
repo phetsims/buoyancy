@@ -20,10 +20,11 @@ import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/commo
 import applications_screen_icon_png from '../../mipmaps/applications_screen_icon_png.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
+import getBuoyancyApplicationsIcon from '../../../density-buoyancy-common/js/buoyancy/view/applications/getBuoyancyApplicationsIcon.js';
 
 export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel, BuoyancyApplicationsScreenView> {
   public constructor( tandem: Tandem ) {
-    const icon = DensityBuoyancyScreenView.getThreeIcon( applications_screen_icon_png, () => BuoyancyApplicationsScreenView.getBuoyancyApplicationsIcon() );
+    const icon = DensityBuoyancyScreenView.getThreeIcon( applications_screen_icon_png, () => getBuoyancyApplicationsIcon() );
     super(
       () => new BuoyancyApplicationsModel( {
         tandem: tandem.createTandem( 'model' )
