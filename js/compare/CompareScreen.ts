@@ -17,10 +17,11 @@ import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/commo
 import compare_screen_icon_png from '../../mipmaps/compare_screen_icon_png.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
+import getBuoyancyCompareIcon from '../../../density-buoyancy-common/js/buoyancy/view/getBuoyancyCompareIcon.js';
 
 export default class CompareScreen extends Screen<BuoyancyCompareModel, BuoyancyCompareScreenView> {
   public constructor( tandem: Tandem ) {
-    const icon = DensityBuoyancyScreenView.getThreeIcon( compare_screen_icon_png, () => BuoyancyCompareScreenView.getBuoyancyCompareIcon() );
+    const icon = DensityBuoyancyScreenView.getThreeIcon( compare_screen_icon_png, getBuoyancyCompareIcon );
 
     super(
       () => new BuoyancyCompareModel( {
