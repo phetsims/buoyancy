@@ -16,8 +16,8 @@ import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import FluidDisplacedAccordionBox from '../../../density-buoyancy-common/js/buoyancy/view/FluidDisplacedAccordionBox.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
+import getLabScreenIcon from '../../../density-buoyancy-common/js/buoyancy/view/getLabScreenIcon.js';
 
 export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScreenView> {
   public constructor( tandem: Tandem ) {
@@ -31,7 +31,7 @@ export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScree
       {
         name: BuoyancyStrings.screen.labStringProperty,
         backgroundColorProperty: DensityBuoyancyCommonColors.skyBottomProperty,
-        homeScreenIcon: new ScreenIcon( FluidDisplacedAccordionBox.createIcon() ),
+        homeScreenIcon: new ScreenIcon( getLabScreenIcon() ),
         tandem: tandem,
         createKeyboardHelpNode: () => new DensityBuoyancyCommonKeyboardHelpNode( true, true )
       }
