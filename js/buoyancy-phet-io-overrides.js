@@ -4,9 +4,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.compareScreen.view.blocksValuePanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.compareScreen.view.displayOptionsPanel.forcesSubpanel.visibleProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.compareScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
