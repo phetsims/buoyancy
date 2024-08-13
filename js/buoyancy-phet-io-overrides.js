@@ -19,9 +19,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.applicationsScreen.view.bottleControls.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.compareScreen.model.pool.fluid.levelVolumeProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.compareScreen.model.pool.scale.heightProperty": {
       "phetioFeatured": true
     },
