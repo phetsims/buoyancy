@@ -37,9 +37,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.exploreScreen.view.fluidDensityPanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.labScreen.model.gravityProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.labScreen.model.gravityProperty.customGravity.gravityValueProperty": {
       "phetioFeatured": true
     },
