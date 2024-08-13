@@ -1,9 +1,6 @@
 /* eslint-disable */
 window.phet.preloads.phetio.phetioElementsOverrides =
   {
-    "buoyancy.applicationsScreen.view.bottleControls.visibleProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.compareScreen.view.blocksValuePanel.visibleProperty": {
       "phetioFeatured": true
     },
