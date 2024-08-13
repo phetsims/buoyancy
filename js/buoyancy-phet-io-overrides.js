@@ -25,9 +25,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.compareScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.compareScreen.view.displayProperties.depthLinesVisibleProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.compareScreen.view.fluidPanel.visibleProperty": {
       "phetioFeatured": true
     },
