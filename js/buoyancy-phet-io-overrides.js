@@ -1,9 +1,6 @@
 /* eslint-disable */
 window.phet.preloads.phetio.phetioElementsOverrides =
   {
-    "buoyancy.applicationsScreen.model.applicationModeProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.applicationsScreen.model.objects.boat.buoyancyForceInterpolatedProperty": {
       "phetioFeatured": true
     },
