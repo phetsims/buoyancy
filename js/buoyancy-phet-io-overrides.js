@@ -1,12 +1,6 @@
 /* eslint-disable */
 window.phet.preloads.phetio.phetioElementsOverrides =
   {
-    "buoyancy.applicationsScreen.model.objects.bottle.materialInside.massProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.applicationsScreen.model.objects.bottle.materialInside.volumeProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.applicationsScreen.view.blockControls.massNumberControl.visibleProperty": {
       "phetioFeatured": true
     },
