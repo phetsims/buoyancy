@@ -4,9 +4,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.applicationsScreen.view.blockControls.massNumberControl.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.applicationsScreen.view.blockControls.visibleProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.applicationsScreen.view.bottleControls.visibleProperty": {
       "phetioFeatured": true
     },
