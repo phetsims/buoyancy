@@ -31,9 +31,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.compareScreen.view.fluidPanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.compareScreen.view.percentSubmergedAccordionBox": {
-      "phetioFeatured": true
-    },
     "buoyancy.exploreScreen.view.fluidDensityPanel.numberControl": {
       "phetioFeatured": true
     },
