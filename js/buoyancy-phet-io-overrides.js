@@ -1,15 +1,6 @@
 /* eslint-disable */
 window.phet.preloads.phetio.phetioElementsOverrides =
   {
-    "buoyancy.applicationsScreen.model.objects.boat.buoyancyForceInterpolatedProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.applicationsScreen.model.objects.boat.contactForceInterpolatedProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.applicationsScreen.model.objects.boat.gravityForceInterpolatedProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.applicationsScreen.model.objects.boat.maxVolumeDisplacedProperty": {
       "phetioFeatured": true
     },
