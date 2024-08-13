@@ -1,9 +1,6 @@
 /* eslint-disable */
 window.phet.preloads.phetio.phetioElementsOverrides =
   {
-    "buoyancy.compareScreen.view.fluidPanel.visibleProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.exploreScreen.view.fluidDensityPanel.visibleProperty": {
       "phetioFeatured": true
     },
