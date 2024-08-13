@@ -17,19 +17,12 @@ import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/
 import ShapesScreen from './shapes/ShapesScreen.js';
 import LabScreen from './lab/LabScreen.js';
 import CompareScreen from './compare/CompareScreen.js';
+import DensityBuoyancyCommonCredits from '../../density-buoyancy-common/js/common/DensityBuoyancyCommonCredits.js';
 
 const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty;
 
 const simOptions: SimOptions = {
-  credits: {
-    leadDesign: '',
-    softwareDevelopment: '',
-    team: '',
-    qualityAssurance: '',
-    graphicArts: '',
-    soundDesign: '',
-    thanks: ''
-  },
+  credits: DensityBuoyancyCommonCredits,
   webgl: true,
 
   preferencesModel: new PreferencesModel( {
