@@ -37,12 +37,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.labScreen.view.gravityPanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.shapesScreen.model.objects.objectA.shapeNameProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.shapesScreen.model.objects.objectA.shapeProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.shapesScreen.view.objectAShapeSizeControls.visibleProperty": {
       "phetioFeatured": true
     },
