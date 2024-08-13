@@ -37,19 +37,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.compareScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.compareScreen.view.displayProperties.buoyancyForceVisibleProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.compareScreen.view.displayProperties.contactForceVisibleProperty": {
-      "phetioFeatured": true
-    },
     "buoyancy.compareScreen.view.displayProperties.depthLinesVisibleProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.compareScreen.view.displayProperties.forceValuesVisibleProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.compareScreen.view.displayProperties.gravityForceVisibleProperty": {
       "phetioFeatured": true
     },
     "buoyancy.compareScreen.view.fluidPanel.visibleProperty": {
