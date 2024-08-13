@@ -28,9 +28,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "buoyancy.compareScreen.view.fluidPanel.visibleProperty": {
       "phetioFeatured": true
     },
-    "buoyancy.exploreScreen.view.fluidDensityPanel.numberControl": {
-      "phetioFeatured": true
-    },
     "buoyancy.exploreScreen.view.fluidDensityPanel.visibleProperty": {
       "phetioFeatured": true
     },
@@ -38,9 +35,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "buoyancy.labScreen.view.blockPanel.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "buoyancy.labScreen.view.gravityPanel.numberControl": {
       "phetioFeatured": true
     },
     "buoyancy.labScreen.view.gravityPanel.visibleProperty": {
