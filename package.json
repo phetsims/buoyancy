@@ -27,7 +27,7 @@
     ],
     "simulation": true,
     "phet-io": {
-      "compareDesignedAPIChanges": false,
+      "compareDesignedAPIChanges": true,
       "wrappers": [
         "phet-io-sim-specific/repos/buoyancy/wrappers/buoyancy-tests"
       ]

@@ -31,7 +31,9 @@ const simOptions: SimOptions = {
         createContent: tandem => new DensityBuoyancyCommonPreferencesNode( { tandem: tandem } )
       } ]
     }
-  } )
+  } ),
+
+  phetioDesigned: true
 };
 
 // launch the sim - beware that scenery Image nodes created outside of simLauncher.launch() will have zero bounds
