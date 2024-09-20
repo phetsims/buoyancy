@@ -5,5 +5,16 @@
     "images/**/*",
     "mipmaps/**/*",
     "sounds/**/*"
+  ],
+  "references": [
+    {
+      "path": "../density-buoyancy-common/tsconfig.json"
+    },
+    {
+      "path": "../mobius/tsconfig.json"
+    },
+    {
+      "path": "../chipper/tsconfig/buildjson"
+    }
   ]
 }

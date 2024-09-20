@@ -62,6 +62,11 @@
               "ts-nocheck": true
             }
           ]
+        },
+        "parserOptions": {
+          "project": [
+            "../buoyancy/tsconfig.json"
+          ]
         }
       }
     ]
