@@ -6,18 +6,18 @@
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
  */
 
+import DensityBuoyancyCommonCredits from '../../density-buoyancy-common/js/common/DensityBuoyancyCommonCredits.js';
+import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonPreferencesNode.js';
 import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim, { SimOptions } from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import ApplicationsScreen from './applications/ApplicationsScreen.js';
 import BuoyancyStrings from './BuoyancyStrings.js';
-import ExploreScreen from './explore/ExploreScreen.js';
-import DensityBuoyancyCommonPreferencesNode from '../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonPreferencesNode.js';
-import ShapesScreen from './shapes/ShapesScreen.js';
-import LabScreen from './lab/LabScreen.js';
 import CompareScreen from './compare/CompareScreen.js';
-import DensityBuoyancyCommonCredits from '../../density-buoyancy-common/js/common/DensityBuoyancyCommonCredits.js';
+import ExploreScreen from './explore/ExploreScreen.js';
+import LabScreen from './lab/LabScreen.js';
+import ShapesScreen from './shapes/ShapesScreen.js';
 
 const buoyancyTitleStringProperty = BuoyancyStrings.buoyancy.titleStringProperty;
 
