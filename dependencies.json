@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "buoyancy": {
-    "sha": "48d855b2122fbf78ed147ecd98bdd710edee1ab0",
+    "sha": "b53d712772be81829c3e2bcfc4a3f66bba6e05f4",
     "branch": "1.2"
   },
   "chipper": {
@@ -53,7 +53,7 @@
     "branch": "HEAD"
   },
   "phet-io-sim-specific": {
-    "sha": "49eb85d1965837d604eac643e56fea6370dd07ec",
+    "sha": "83cef75475dc841f5050125d44b69fe876d3d2c9",
     "branch": "HEAD"
   },
   "phet-io-wrappers": {
