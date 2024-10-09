@@ -43,6 +43,7 @@
       "BUOYANCY/screen.lab",
       "BUOYANCY/screen.shapes",
       "BUOYANCY/screen.applications"
-    ]
+    ],
+    "published": true
   }
 }
