@@ -1,5 +1,5 @@
 {
-  "comment": "# buoyancy 1.2.1-rc.1 Thu Oct 10 2024 14:01:34 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# buoyancy 1.2.1 Fri Oct 11 2024 09:43:21 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "4eaabfefb0b88b213e98b9c7f32d6c570c3fc122",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "buoyancy": {
-    "sha": "b754102b791095e76486a057418ebb2523d0a1ab",
+    "sha": "6bb8e61b42f2b0d3a7d0c5cc199d64466dcea29b",
     "branch": "1.2"
   },
   "chipper": {
