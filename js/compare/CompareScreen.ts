@@ -6,18 +6,18 @@
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
 
-import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
-import Screen from '../../../joist/js/Screen.js';
-import Tandem from '../../../tandem/js/Tandem.js';
 import BuoyancyCompareModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyCompareModel.js';
 import BuoyancyCompareScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyCompareScreenView.js';
-import ScreenIcon from '../../../joist/js/ScreenIcon.js';
+import getBuoyancyCompareIcon from '../../../density-buoyancy-common/js/buoyancy/view/getBuoyancyCompareIcon.js';
+import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
 import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
 import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
+import Screen from '../../../joist/js/Screen.js';
+import ScreenIcon from '../../../joist/js/ScreenIcon.js';
+import Tandem from '../../../tandem/js/Tandem.js';
 import compare_screen_icon_png from '../../mipmaps/compare_screen_icon_png.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
-import getBuoyancyCompareIcon from '../../../density-buoyancy-common/js/buoyancy/view/getBuoyancyCompareIcon.js';
 
 export default class CompareScreen extends Screen<BuoyancyCompareModel, BuoyancyCompareScreenView> {
   public constructor( tandem: Tandem ) {

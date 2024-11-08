@@ -10,14 +10,14 @@
 
 import BuoyancyLabModel from '../../../density-buoyancy-common/js/buoyancy/model/BuoyancyLabModel.js';
 import BuoyancyLabScreenView from '../../../density-buoyancy-common/js/buoyancy/view/BuoyancyLabScreenView.js';
+import getLabScreenIcon from '../../../density-buoyancy-common/js/buoyancy/view/getLabScreenIcon.js';
 import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
+import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
 import Screen from '../../../joist/js/Screen.js';
+import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
-import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
-import getLabScreenIcon from '../../../density-buoyancy-common/js/buoyancy/view/getLabScreenIcon.js';
 
 export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScreenView> {
   public constructor( tandem: Tandem ) {

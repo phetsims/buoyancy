@@ -11,16 +11,16 @@
 
 import BuoyancyShapesModel from '../../../density-buoyancy-common/js/buoyancy/model/shapes/BuoyancyShapesModel.js';
 import BuoyancyShapesScreenView from '../../../density-buoyancy-common/js/buoyancy/view/shapes/BuoyancyShapesScreenView.js';
+import getBuoyancyShapesIcon from '../../../density-buoyancy-common/js/buoyancy/view/shapes/getBuoyancyShapesIcon.js';
 import DensityBuoyancyCommonColors from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonColors.js';
+import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
+import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
 import Screen from '../../../joist/js/Screen.js';
+import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Tandem from '../../../tandem/js/Tandem.js';
+import shapes_screen_icon_png from '../../mipmaps/shapes_screen_icon_png.js';
 import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
-import DensityBuoyancyScreenView from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyScreenView.js';
-import shapes_screen_icon_png from '../../mipmaps/shapes_screen_icon_png.js';
-import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-common/js/common/view/DensityBuoyancyCommonKeyboardHelpNode.js';
-import getBuoyancyShapesIcon from '../../../density-buoyancy-common/js/buoyancy/view/shapes/getBuoyancyShapesIcon.js';
 
 export default class ShapesScreen extends Screen<BuoyancyShapesModel, BuoyancyShapesScreenView> {
   public constructor( tandem: Tandem ) {
