@@ -13,19 +13,13 @@ import buoyancy from './buoyancy.js';
 
 type StringsType = {
   'buoyancy': {
-    'title': string;
     'titleStringProperty': LocalizedStringProperty;
   };
   'screen': {
-    'compare': string;
     'compareStringProperty': LocalizedStringProperty;
-    'explore': string;
     'exploreStringProperty': LocalizedStringProperty;
-    'lab': string;
     'labStringProperty': LocalizedStringProperty;
-    'shapes': string;
     'shapesStringProperty': LocalizedStringProperty;
-    'applications': string;
     'applicationsStringProperty': LocalizedStringProperty;
   }
 };
