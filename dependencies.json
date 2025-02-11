@@ -1,5 +1,5 @@
 {
-  "comment": "# buoyancy 1.2.2 Fri Feb 07 2025 18:21:32 GMT-0700 (Mountain Standard Time)",
+  "comment": "# buoyancy 1.2.2 Tue Feb 11 2025 14:30:24 GMT-0500 (Colombia Standard Time)",
   "assert": {
     "sha": "4eaabfefb0b88b213e98b9c7f32d6c570c3fc122",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "buoyancy": {
-    "sha": "a9bf2eda6962df2e038259867a7dddf9bb08e280",
+    "sha": "9deecfa5c9d3bef911c56d96572c2e0483900bfe",
     "branch": "1.2"
   },
   "chipper": {
@@ -21,8 +21,8 @@
     "branch": "HEAD"
   },
   "density-buoyancy-common": {
-    "sha": "fb4c24392cc7e0b2076217a29a8788a48ceccbee",
-    "branch": "HEAD"
+    "sha": "a70dc7117467d6791fd67aa0a7cf468aeded30ad",
+    "branch": "buoyancy-1.2"
   },
   "dot": {
     "sha": "65f0f79745edd7d839d86312e8ac2a1494e91827",
