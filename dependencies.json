@@ -1,5 +1,5 @@
 {
-  "comment": "# buoyancy 1.2.4-rc.1 Thu Feb 13 2025 12:52:34 GMT-0500 (Colombia Standard Time)",
+  "comment": "# buoyancy 1.2.4 Thu Feb 13 2025 12:58:30 GMT-0500 (Colombia Standard Time)",
   "assert": {
     "sha": "4eaabfefb0b88b213e98b9c7f32d6c570c3fc122",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "buoyancy": {
-    "sha": "dd79d526a9f8bc22a7a87510854115c138df4c4e",
+    "sha": "c7521c843ed8686bf689a060e41a92cfbb3652bb",
     "branch": "1.2"
   },
   "chipper": {
