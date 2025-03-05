@@ -9,15 +9,15 @@
     "branch": "HEAD"
   },
   "brand": {
-    "sha": "0e84d480a4e3e5ce0fc42537467d09e7d3ffb192",
+    "sha": "aab535123b3c84f7929f92c74c4f2371f1588946",
     "branch": "HEAD"
   },
   "buoyancy": {
-    "sha": "c7521c843ed8686bf689a060e41a92cfbb3652bb",
+    "sha": "edcf8a4bf58aaa37e9c83de74194a55391ad551f",
     "branch": "1.2"
   },
   "chipper": {
-    "sha": "f191ee028c2e35a17e065e4d04f59af082d727f6",
+    "sha": "b9ad93e6488670887222d2b2f8a50128dbd852c9",
     "branch": "HEAD"
   },
   "density-buoyancy-common": {
@@ -29,7 +29,7 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "b07832f38b0195959ff696961e617a0a4d6558a0",
+    "sha": "68b3d2ce0e3cc0787917db5510670ffe378af7d0",
     "branch": "HEAD"
   },
   "kite": {
@@ -57,7 +57,7 @@
     "branch": "HEAD"
   },
   "phet-io-wrappers": {
-    "sha": "0a32b5d159f8b725fee2fec79be919c405e2b94f",
+    "sha": "4d0b296d6662f5f816898b23a6440b84f4a044c2",
     "branch": "HEAD"
   },
   "phetcommon": {
