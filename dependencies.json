@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "buoyancy": {
-    "sha": "2fe7d9e7c62071b4d46fc537de876602fdb92e65",
+    "sha": "b4cae3d3d3ecd7d736390af78177717a79d64632",
     "branch": "1.2"
   },
   "chipper": {
@@ -77,7 +77,7 @@
     "branch": "HEAD"
   },
   "scenery-phet": {
-    "sha": "f1cc53bf0dd1d137a1c653f4bd4fdc92d11a49f5",
+    "sha": "f25626613e1b647323056c3be68c6e6add3f2540",
     "branch": "HEAD"
   },
   "sherpa": {
