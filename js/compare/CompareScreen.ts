@@ -16,7 +16,6 @@ import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import compare_screen_icon_png from '../../mipmaps/compare_screen_icon_png.js';
-import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 
 export default class CompareScreen extends Screen<BuoyancyCompareModel, BuoyancyCompareScreenView> {
@@ -43,5 +42,3 @@ export default class CompareScreen extends Screen<BuoyancyCompareModel, Buoyancy
     );
   }
 }
-
-buoyancy.register( 'CompareScreen', CompareScreen );

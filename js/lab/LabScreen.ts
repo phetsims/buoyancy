@@ -16,7 +16,6 @@ import DensityBuoyancyCommonKeyboardHelpNode from '../../../density-buoyancy-com
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Tandem from '../../../tandem/js/Tandem.js';
-import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 
 export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScreenView> {
@@ -38,5 +37,3 @@ export default class LabScreen extends Screen<BuoyancyLabModel, BuoyancyLabScree
     );
   }
 }
-
-buoyancy.register( 'LabScreen', LabScreen );

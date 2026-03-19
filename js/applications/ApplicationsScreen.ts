@@ -19,7 +19,6 @@ import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import applications_screen_icon_png from '../../mipmaps/applications_screen_icon_png.js';
-import buoyancy from '../buoyancy.js';
 import BuoyancyStrings from '../BuoyancyStrings.js';
 
 export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel, BuoyancyApplicationsScreenView> {
@@ -45,5 +44,3 @@ export default class ApplicationsScreen extends Screen<BuoyancyApplicationsModel
     );
   }
 }
-
-buoyancy.register( 'ApplicationsScreen', ApplicationsScreen );
