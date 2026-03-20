@@ -26,4 +26,6 @@ type StringsType = {
 
 const BuoyancyStrings = getStringModule( 'BUOYANCY' ) as StringsType;
 
+buoyancy.register( 'BuoyancyStrings', BuoyancyStrings );
+
 export default BuoyancyStrings;
